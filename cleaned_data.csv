@@ -1,0 +1,2 @@
+trans_date_trans_time,cc_num,merchant,category,amt,first,last,gender,street,city,state,zip,lat,long,city_pop,job,dob,trans_num,unix_time,merch_lat,merch_long,is_fraud,merch_zipcode
+0,343472729187663.0,0,0,372.4,0,0,0,0,0,0,3816.0,43.6849,-71.2551,1368.0,0,0,0,1331175685.0,44.42819,-71.47170899999999,1.0,3583.0

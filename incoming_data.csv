@@ -1,0 +1,2 @@
+trans_date_trans_time,cc_num,merchant,category,amt,first,last,gender,street,city,state,zip,lat,long,city_pop,job,dob,trans_num,unix_time,merch_lat,merch_long,is_fraud,merch_zipcode
+2019-01-01 18:20:38,4560395181594436016,fraud_Fisher Inc,shopping_net,1.92,Angela,Taylor,F,6343 Ramirez Skyway Apt. 518,Lakeport,CA,95453,39.047,-122.9328,11256,Podiatrist,1972-10-18,af5011d8e7cb6cc9c9bef96a9ad83195,1325442038,38.519133,-123.181343,0,95450.0
