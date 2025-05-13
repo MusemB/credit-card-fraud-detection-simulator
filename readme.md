@@ -28,17 +28,17 @@ Likewise for docker, uncomment the appropriate line and create a docker-image. R
 ![Alt text](pipeline.png)
 
 This project uses the medallion architecture for its pipeline. Credit card transaction info is simulated by reading
-one line at a time from a CSV file. Afterwards, the transaction is stored into a log, whilst a copy is transformed and fed into the 
+a CSV file one line at a time. Afterwards, the transaction is stored into a log, whilst a copy is transformed and fed into the 
 fraud classifier. Then the result of the fraud classifier is combined with the stored transaction log and pushed into
-a postgres database. Finally, a dash dashboard application will read and display data from the database. 
+a database (simulated by another csv file). Finally, a dash dashboard application will read and display data from the database. 
 
 ----------------------------------
 
 ## Dataset
 the credit card transaction **[dataset](https://www.kaggle.com/datasets/priyamchoksi/credit-card-transactions-dataset)** is
 taken from kaggle. It consists of over 20 variables, including credit card holder information (name, credit card number,
-job/profession,...etc). the data set contains 1.3 million transactions, where 7506 of them are fraudulent. After removing
-all rows with at least one missing value in one of its columns, the total size shrunk to 1.1 million transactions.
+job/profession,...etc). The data set contains 1.3 million transactions, where 7506 of them are fraudulent. After removing
+all rows with at least one missing value in one of its columns, the total size shrank to 1.1 million transactions.
 For practical reasons, the simulated data stream will consist of a total of 5000 credit card transactions, having a 
 80/20 legitimate to fraud ratio.
 
