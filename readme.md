@@ -45,8 +45,7 @@ For practical reasons, the simulated data stream will consist of a total of 5000
 
 
 ## Classifier
-<p> xgboost was used to create the fraud detection classifier. The reason
-for this is that it is fairly simple to implement,
+<p> xgboost was used to create the fraud detection classifier. This is because it is fairly simple to implement,
 while providing lower variance (therefore being more accurate) compared
 to other classifier models like logistic regression or random forest. <p>
 
@@ -75,4 +74,4 @@ adequacy. Legitimate transactions were coded as "0", while fraudulent transactio
 | Actual 1      | 469         | 834         |
 
 Unsurprisingly, the precision and recall for legitimate transactions are 1, which makes sense since the event of
-fraud is so rare. Since the fraud has a recall rate of 0.64, the model missed 34% of fraudulent transactions, indicating that xgboost might not be the best-suited algorithm for this task. 
+fraud is so rare. Since the fraud has a recall rate of 0.64, the model missed 34% of fraudulent transactions, indicating that xgboost might not be the best-suited algorithm for this task for real-world applications. 
