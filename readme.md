@@ -14,9 +14,7 @@
 <p>This project is simulates credit card transactions, detects fraudulent cases by
 using a trained ml-model and displays
 various related metrics to an interactive dashboard; mainly, the geographical location of the
-transaction,transaction category, amount and fraud status. The aforementioned is achieved by the use of an apache
-air-flow pipeline in conjunction with docker.Furthermore, the dashboard shows metrics for predicted fraud,
-actual fraud, false positives and false negatives.
+transaction, transaction category, amount and fraud status. The whole program is also compatible with docker. The dashboard is created with dash and plotly, showing metrics for predicted fraud, actual fraud, false positives, and false negatives.
  <p>
 
 ## Pipeline
