@@ -54,7 +54,7 @@ The training set consisted of 1.1 million credit card transactions, whereas the 
 yielding an 80/20 train/test split 
 
 A learning rate of 0.1 yielded the best results in terms of model 
-adequacy. Fraudulent transactions were coded as "0", while legitimate transactions were coded as "1". </p>
+adequacy. Legitimate transactions were coded as "0", while fraudulent transactions were coded as "0". </p>
 
 
 
@@ -75,4 +75,4 @@ adequacy. Fraudulent transactions were coded as "0", while legitimate transactio
 | Actual 1      | 469         | 834         |
 
 Unsurprisingly, the precision and recall for legitimate transactions are 1, which makes sense since the event of
-fraud is so rare. Since the fraud has a recall rate of 0.64, it means that the model missed 34% of fraudulent transactions, indicating that xgboost might not be the best suitable algorithm for this task. 
+fraud is so rare. Since the fraud has a recall rate of 0.64, the model missed 34% of fraudulent transactions, indicating that xgboost might not be the best-suited algorithm for this task. 
