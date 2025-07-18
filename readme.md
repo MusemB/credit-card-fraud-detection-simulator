@@ -76,5 +76,4 @@ fraud is so rare.
 
 ## dashboard
 
-![]
-(dashboardgif.gif)
+![](dashboardgif.gif)
