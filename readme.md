@@ -81,14 +81,33 @@ fraud is so rare.
 
 | variable name |   description    |  data type  |
 |---------------|------------------|-------------|
-| category      | purchase category| 110         |
-| lat           | purchase latitude| 834         |
-| lon           |purchase longitude| 834         |
-| city          | 469              | 834         |
-| city_pop      | 469              | 834         |
-| state         | 469              | 834         |
-| amt           | 469              | 834         |
-| is_fraud      | 469              | 834         |
-| job           | 469              | 834         |
+| category      | purchase category| categorical |
+| lat           | customer latitude| numerical   |
+| lon           |customer longitude| numerical   |
+| city          | city of purchase | categorical |
+| city_pop      |population of city| numerical   |
+| state         | state of city    | categorical |
+| amt           |transaction amount| numerical   |
+| is_fraud      |fraud status      | categorical |
+| job           |customer job title| categorical |
+
+**transaction categories**
+| variable name |        description            |
+|---------------|-------------------------------|
+| misc_pos      | miscellaneous point of sale   |
+| gas_transport | gas pump                      |
+| shopping_pos  | shop point of sale            |
+| food_dining   | restaurant purchase           |
+| grocery_pos   | grocery store point of sale   |
+| misc_net      |miscellaneous online purchase  |
+| entertainment |entertainment related purchase |
+| kids_pets     |kid or pet related purchase    |
+| grocery_net   |online grocery purchase        |
+| personal_care |personal care related purchase |
+| home          | home related purchase         |
+| travel        |travel related purchase        |
+| health_fitness|health and fitness purchase    |
+
+
 
 ![](dashboardgif.gif)
