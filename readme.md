@@ -9,15 +9,14 @@
 
 [Fraud Detection Classifier](#classifier)
 
-[]
+[Dashboard](#dashboard
 
 ## Introduction
 <p>This project is simulates credit card transactions, detects fraudulent cases by
 using a trained ml-model and displays
 various related metrics to an interactive dashboard; mainly, the geographical location of the
-transaction, transaction category, amount, and fraud status. The aforementioned is achieved by the use of an Apache
-air-flow pipeline in conjunction with Docker. Furthermore, the dashboard shows metrics for predicted fraud,
-actual fraud, false positives and false negatives.
+transaction, transaction category, amount, and fraud status. Furthermore, the dashboard shows metrics for predicted fraud,
+actual fraud, false positives, and false negatives. Lastly all of this is made into a Dockerizable container
  <p>
 
 ## Pipeline
@@ -27,7 +26,8 @@ actual fraud, false positives and false negatives.
 This project uses the medallion architecture for its pipeline. Credit card transaction info is simulated by reading
 one line at a time from a csv file. Afterwards, the transaction is stored in a log, whilst a copy is transformed and fed into the 
 fraud classifier. Then the result of the fraud classifier is combined with the stored transaction log and pushed into
-a PostgreSQL database. Finally, a dash dashboard application will read and display data from the database. 
+a PostgreSQL database. Finally, a dash dashboard application will read and display data from the database. However, to keep the
+size of this project manageable, the postgres database is replaced with a csv file.
 
 ----------------------------------
 
