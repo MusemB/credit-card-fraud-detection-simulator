@@ -76,3 +76,5 @@ fraud is so rare.
 
 ## dashboard
 
+![dashboard]
+(https://github.com/MusemB/credit-card-fraud-detection-simulator/blob/main/dashboardgif.gif)
