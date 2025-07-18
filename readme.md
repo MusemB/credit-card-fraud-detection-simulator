@@ -34,8 +34,8 @@ size of this project manageable, the postgres database is replaced with a csv fi
 ## Dataset
 the credit card transaction **[dataset](https://www.kaggle.com/datasets/priyamchoksi/credit-card-transactions-dataset)** is
 taken from kaggle. It consists of over 20 variables, including credit card holder information (name, credit card number,
-job/profession ...etc). The data set contains 1.3 million transactions, where 7506 of them are fraudulent. After removing
-all rows with at least one missing value in one of its columns, the total size shrunk to 1.1 million transactions.
+job/profession, etc). The dataset contains 1.3 million transactions occurring in the US, of which 7506 are fraudulent. After removing
+all rows with at least one missing value in one of its columns, the total size shrank to 1.1 million transactions.
 For practical reasons, the simulated data stream will consist of a total of 5000 credit card transactions, having a 
 80/20 legitimate to fraud ratio.
 
@@ -45,10 +45,11 @@ For practical reasons, the simulated data stream will consist of a total of 5000
 <p> xgboost was used to create the fraud detection classifier. The reason
 for this is due to the fact that it is fairly simple to implement,
 while providing lower variance (therefore being more accurate) compared
-to other classifier models like logistic regression or random forest. <p>
+to other classifier models like multinomial logistic regression or random forest. The drawback, however, is that
+we are unable to analyze the dependent variables, unlike in logistic regression. <p>
 
 The training set consisted of 1.1 million credit card transactions, whereas the testing set had 220 thousand transactions.
-yielding an 80/20 train/test split 
+yielding an 80/20 train/test split.
 
 A learning rate of 0.1 yielded the best results in terms of model 
 adequacy. Fraudulent transactions were coded as "0", while legitimate transactions were coded as "1". </p>
@@ -75,7 +76,8 @@ Unsurprisingly, the precision and recall for legitimate transactions are 1, whic
 fraud is so rare.  
 
 ## dashboard
-
+The dashboard contains a geographical map of the US. The points on the map represent the location where the transaction
+took place. When hovering on the point, the following label information pops up:
 
 **Label information**
 
@@ -90,6 +92,10 @@ fraud is so rare.
 | amt           |transaction amount| numerical   |
 | is_fraud      |fraud status      | categorical |
 | job           |customer job title| categorical |
+
+
+to the right of the map are all the transaction categories, which
+are shown below:
 
 **transaction categories**
 | variable name |        description            |
@@ -108,6 +114,11 @@ fraud is so rare.
 | travel        |travel related purchase        |
 | health_fitness|health and fitness purchase    |
 
+The categories can be either toggled to show a specific one, or to exclude
+a category.
 
-
+Lastly, the four counters display the amount of predicted fraud, actual fraud,
+false positives (predicted as fraud when actually legitimate) and
+false negatives(predicted as legitimate transactions when actually fraud).
+**dashboard**
 ![](dashboardgif.gif)
