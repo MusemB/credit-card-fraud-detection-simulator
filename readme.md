@@ -76,4 +76,19 @@ fraud is so rare.
 
 ## dashboard
 
+
+**Label information**
+
+| variable name |   description    |  data type  |
+|---------------|------------------|-------------|
+| category      | purchase category| 110         |
+| lat           | purchase latitude| 834         |
+| lon           |purchase longitude| 834         |
+| city          | 469              | 834         |
+| city_pop      | 469              | 834         |
+| state         | 469              | 834         |
+| amt           | 469              | 834         |
+| is_fraud      | 469              | 834         |
+| job           | 469              | 834         |
+
 ![](dashboardgif.gif)
