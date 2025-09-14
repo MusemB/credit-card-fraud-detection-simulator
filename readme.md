@@ -9,7 +9,7 @@
 
 [Fraud Detection Classifier](#classifier)
 
-[Dashboard](#dashboard
+[Dashboard](#dashboard)
 
 ## Introduction
 <p>This project is simulates credit card transactions, detects fraudulent cases by
@@ -122,3 +122,4 @@ false positives (predicted as fraud when actually legitimate) and
 false negatives(predicted as legitimate transactions when actually fraud).
 **dashboard**
 ![](dashboardgif.gif)
+
